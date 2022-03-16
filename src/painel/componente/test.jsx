@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import './painel.css';
+import '../painel.css';
 import { Modal, Button, Form, Row, InputGroup, Alert, FloatingLabel, Table, Spinner } from 'react-bootstrap';
 import { FaRegEnvelopeOpen } from 'react-icons/fa';
 import { BsPlusCircle } from 'react-icons/bs';
-import { addcliente, getCliente } from '../service/api';
+import { addcliente, getCliente } from '../../service/api';
 import { hot } from 'react-hot-loader/root';
 import Cookies from 'universal-cookie';
-import ListaEdit from './registro/edit';
+import ListaEdit from './edit';
 
 
 

@@ -3,14 +3,10 @@ import { Button } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import React, { useContext, useEffect, useState } from 'react';
-import { AuthContext } from '../contexts/auth';
-import { getUsuarios, updateUsuarios } from '../service/api';
+import { AuthContext } from '../../contexts/auth';
+import { getUsuarios, updateUsuarios } from '../../service/api';
 import { Spinner } from "react-bootstrap";
 import axios from 'axios';
-
-
-
-
 
 
 export default function UserForm() {

@@ -1,10 +1,10 @@
 import { BrowserRouter as Routers, Route, Routes, useNavigate } from "react-router-dom";
 import React, { useContext } from "react";
-import Painel from './painel';
-import Login from './login';
+import Painel from '../painel/painel';
+import Login from '../login/login';
 import { AuthProvider, AuthContext } from '../contexts/auth';
 import { Spinner } from "react-bootstrap";
-import ModalEdit from "../painel/registro/modalEdit";
+import ModalEdit from '../painel/componente/modalEdit';
 
 
 export default function AppRoutes() {

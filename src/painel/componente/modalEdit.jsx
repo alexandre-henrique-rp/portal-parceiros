@@ -4,7 +4,7 @@ import { Alert, FloatingLabel, Form, InputGroup, Button, Spinner, Modal, Row } f
 import { FaRegEnvelopeOpen } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
-import { updateCliente, getEdtCliente } from "../../service/api";
+import { updateCliente, getEdtCliente } from '../../service/api';
 
 
 

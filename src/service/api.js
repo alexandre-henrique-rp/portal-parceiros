@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const clienteHttp = axios.create({
-     baseURL: 'rbrp.kinghost.net:21312',
+     baseURL: 'https://rede-brasil-pwa-backend.herokuapp.com/',
 });
 
 export const createSession = async (email, senha) => {

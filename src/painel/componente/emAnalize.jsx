@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { FaRegCheckCircle } from 'react-icons/fa';
+import { FaRegClock } from 'react-icons/fa';
+import '../painel.css';
 import React, { useEffect, useState } from 'react';
-import { getCliente } from '../service/api';
-import './painel.css';
+import { getCliente } from '../../service/api';
 import Cookies from 'universal-cookie';
 
-export default function EmConclusao() { 
+export default function EmAnalise() {
      const [cliente, setCliente] = useState([])
-     
+
      const cookies = new Cookies();
 
      const recoveredUser = cookies.get('userPolo');
@@ -18,17 +18,18 @@ export default function EmConclusao() {
                setCliente(respota.data);
           })();
      }, []);
+     
 
-     const conclusaoF = cliente.filter(item => item.andamento === "APROVADO")
-     const conclusaoE = cliente.filter(item => item.andamento === "EMITIDO")
+     const conclusaoF = cliente.filter(item => item.andamento === "REVOGADO")
+     const conclusaoE = cliente.filter(item => item.andamento === "CANCELADO")
      const conclusao = parseInt(conclusaoF.length) + parseInt(conclusaoE.length)
 
      return (
           <div className="col-lg-3">
-               <div className="conclusao">
+               <div className="analise">
                     <h3>
-                         <span>Processos Concluídos</span>
-                         <FaRegCheckCircle />
+                         <span>Processos Encerrado</span>
+                         <FaRegClock />
                     </h3>
                     <p>{conclusao}</p>
                </div>

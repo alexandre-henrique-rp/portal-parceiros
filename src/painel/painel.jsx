@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../painel/painel.css';
-import UserButton from '../painel/userButton';
-import EmConclusao from '../painel/emConclusao';
-import EmAnalise from '../painel/emAnalize';
-import EmAberto from '../painel/emAberto';
+import './painel.css';
+import UserButton from './componente/userButton';
+import EmConclusao from './componente/emConclusao';
+import EmAnalise from './componente/emAnalize';
+import EmAberto from './componente/emAberto';
 import LOGO2 from '../img/LOGO2.svg';
-import Test from '../painel/test';
+import Test from './componente/test';
 
 
 

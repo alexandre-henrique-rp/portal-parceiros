@@ -1,0 +1,24 @@
+.userBTM {
+     display: flex;
+}
+
+.userButton {
+     color: #fff;
+     font-size: 3rem;
+     cursor: pointer;
+
+
+}
+
+.userButton:hover {
+     color: #fff;
+     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+     .userButton {
+          margin-top: 1rem;
+          font-size: 2rem;
+          margin-left: 1rem;
+     }
+}

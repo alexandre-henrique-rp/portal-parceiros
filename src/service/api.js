@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const clienteHttp = axios.create({
-     baseURL: process.env.REACT_APP_POT,
+     baseURL: 'rbrp.kinghost.net:21312',
 });
 
 export const createSession = async (email, senha) => {

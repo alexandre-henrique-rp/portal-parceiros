@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const clienteHttp = axios.create({
-     baseURL: 'http://rbrp.kinghost.net/parceiros/api',
+     baseURL: 'https://parceiroapi.redebrasilrp.com.br',
 });
 
 export const createSession = async (email, senha) => {

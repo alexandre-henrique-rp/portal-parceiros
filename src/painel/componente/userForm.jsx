@@ -7,6 +7,7 @@ import { AuthContext } from '../../contexts/auth';
 import { getUsuarios, updateUsuarios } from '../../service/api';
 import { Spinner } from "react-bootstrap";
 import axios from 'axios';
+import Cookies from 'universal-cookie';
 
 
 export default function UserForm() {
@@ -35,6 +36,7 @@ export default function UserForm() {
      const [cidade, setCidade] = useState('');
      const [estado, setEstado] = useState('');
      const [nomeBairro, setNomeBairro] = useState('');
+     const cookies = new Cookies();
 
      useEffect(() => {
           (async () => {
@@ -48,8 +50,8 @@ export default function UserForm() {
      const handleLogout = () => {
           logout();
      }
-     const recoveredUser = localStorage.getItem('user');
-     const userId = JSON.parse(recoveredUser).id;
+     const recoveredUser = cookies.get('userId');
+     const userId = JSON.parse(recoveredUser);
 
 
      if (loading) {

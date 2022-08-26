@@ -1,4 +1,4 @@
-import AppRoutes from './page/appRoutes';
+import AppRoutes from './page/appRoutes.jsx';
 import './App.css';
 
 

@@ -38,9 +38,9 @@ export const getEdtCliente = async (id) => {
      return clienteHttp.get(`/cliente/get/${id}`);
 }  
 
-export const addcliente = async(dt_agenda, nome, email, rg, cpf, cnpj, unidade, tipocd, hr_agenda, fomapgto, valorcd, ct_parcela, telefone, contador, dt_nascimento, reg_cnh, cei, razaosocial, validacao) => {
+export const addcliente = async(dt_agenda, nome, email, rg, cpf, cnpj, unidade, tipocd, hr_agenda, fomapgto, valorcd, ct_parcela, telefone, dt_nascimento, reg_cnh, cei, razaosocial, validacao) => {
      return clienteHttp.post("/cadastrar/cliente", {
-          dt_agenda, nome, email, rg, cpf, cnpj, unidade, tipocd, hr_agenda, fomapgto, valorcd, ct_parcela, telefone, contador, dt_nascimento, reg_cnh, cei, razaosocial, validacao
+          dt_agenda, nome, email, rg, cpf, cnpj, unidade, tipocd, hr_agenda, fomapgto, valorcd, ct_parcela, telefone, dt_nascimento, reg_cnh, cei, razaosocial, validacao
 });
 }
 

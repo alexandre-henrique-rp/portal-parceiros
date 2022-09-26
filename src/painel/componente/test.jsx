@@ -80,15 +80,13 @@ function Test() {
 
      const Saveinfo = async (dt_agenda, nome, email, rg, cpf, cnpj, unidade, tipocd, hr_agenda, fomapgto, valorcd, ct_parcela, telefone, dt_nascimento, reg_cnh, cei, razaosocial, validacao) => {
           const response = await addcliente(dt_agenda, nome, email, rg, cpf, cnpj, unidade, tipocd, hr_agenda, fomapgto, valorcd, ct_parcela, telefone, dt_nascimento, reg_cnh, cei, razaosocial, validacao);
-
           const newCliente = await cliente;
-          setCliente(oldCliente => [...oldCliente, newCliente])
-
+          setCliente(oldCliente => [...oldCliente, newCliente]);
+          setTimeout(() => {
+               window.location.reload()
+          }, 500);
           console.log("Save", response.data);
      };
-
-
-    
 
 
 

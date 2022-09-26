@@ -21,7 +21,8 @@ export default function EmAnalise() {
 
      const conclusaoF = cliente.filter(item => item.andamento === "EM EDICAO")
      const conclusaob = cliente.filter(item => item.andamento === "AGENDADO")
-     const conclusao = parseInt(conclusaoF.length) + parseInt(conclusaob.length)
+     const conclusaoc = cliente.filter(item => item.andamento === "NOVA FC" || "" || null || undefined)
+     const conclusao = parseInt(conclusaoF.length) + parseInt(conclusaob.length) + parseInt(conclusaoc.length)
      return (
           <div className="col-lg-3">
                <div className="edição">

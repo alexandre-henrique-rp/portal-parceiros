@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { getCliente } from '../../service/api';
 import Cookies from 'universal-cookie';
 
-export default function EmAnalise() {
+export default function EmAberto() {
      const [cliente, setCliente] = useState([])
 
      const cookies = new Cookies();
@@ -24,7 +24,7 @@ export default function EmAnalise() {
      const conclusaoc = cliente.filter(item => item.andamento === "NOVA FC" || "" || null || undefined)
      const conclusao = parseInt(conclusaoF.length) + parseInt(conclusaob.length) + parseInt(conclusaoc.length)
      return (
-          <div className="col-lg-3">
+          <div className="col-lg col-md-12 col-sm-12">
                <div className="edição">
                     <h3>
                          <span>Processos em Edição</span>
@@ -32,8 +32,6 @@ export default function EmAnalise() {
                     </h3>
                     <p>{conclusao}</p>
                </div>
-
           </div>
-
      )
 }

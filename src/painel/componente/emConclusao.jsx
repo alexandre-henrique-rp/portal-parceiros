@@ -24,7 +24,7 @@ export default function EmConclusao() {
      const conclusao = parseInt(conclusaoF.length) + parseInt(conclusaoE.length)
 
      return (
-          <div className="col-lg-3">
+          <div className="col-lg col-md-12 col-sm-12">
                <div className="conclusao">
                     <h3>
                          <span>Processos Concluídos</span>
@@ -32,8 +32,6 @@ export default function EmConclusao() {
                     </h3>
                     <p>{conclusao}</p>
                </div>
-
           </div>
-
      )
 }

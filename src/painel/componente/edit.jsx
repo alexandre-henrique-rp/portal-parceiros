@@ -52,7 +52,8 @@ function ListaEdit() {
           const id = cliente.id;
           const unico = cliente.unico;
           const json = JSON.stringify(unico) ;
-          const voucherString = json.replace(/.json/g, '');
+          console.log(json);
+          const voucherString = json.replace(/.json/g, '') || '';
           const voucher = JSON.parse(voucherString);
 
           const send = () => {

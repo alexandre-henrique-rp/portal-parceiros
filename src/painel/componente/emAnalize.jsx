@@ -25,7 +25,7 @@ export default function EmAnalise() {
      const conclusao = parseInt(conclusaoF.length) + parseInt(conclusaoE.length)
 
      return (
-          <div className="col-lg-3">
+          <div className="col-lg col-md-12 col-sm-12">
                <div className="analise">
                     <h3>
                          <span>Processos Encerrado</span>
@@ -33,8 +33,6 @@ export default function EmAnalise() {
                     </h3>
                     <p>{conclusao}</p>
                </div>
-
           </div>
-
      )
 }

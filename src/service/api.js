@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const clienteHttp = axios.create({
-     baseURL: 'https://parceiroapi.redebrasilrp.com.br',
+     // baseURL: 'https://parceiroapi.redebrasilrp.com.br',
+     baseURL: 'http://localhost:3031',
 });
 
 export const createSession = async (email, senha) => {
@@ -9,7 +10,9 @@ export const createSession = async (email, senha) => {
 };
 
 export const getCliente = async (numeropolo) => {
-     return clienteHttp.get(`/clientes/${ numeropolo }`);
+     const response = await clienteHttp.get(`/clientes/${ numeropolo }`);
+     console.log("getCliente", response.data);
+     return response;
 };
 
 export const getUsuarios = async (id) => {

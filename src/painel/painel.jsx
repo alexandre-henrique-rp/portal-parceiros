@@ -23,14 +23,13 @@ export default function Painel() {
 
                     <div className="container-lg">
                          <header>
-                              <img src={LOGO2} alt="logo" className="Logo col-11" />
+                              <img src={LOGO2} alt="logo" className="Logo" />
                               <UserButton />
                          </header>
-
                     </div>
                </div>
                <div className="container-lg">
-                    <div className="row-lg gx-5 mostrador">
+                    <div className="row g-3 mostrador justify-content-center">
                          <EmAberto />
                          <EmAnalise />
                          <EmConclusao />
